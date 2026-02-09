@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Granite Quarry Visual Journey</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html#page-top">GRANITE QUARRY</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <header class="gallery-hero">
+      <div class="container h-100">
+        <div
+          class="row h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-10">
+            <h1 class="text-white display-3 fw-bold mb-3">Visual Journey</h1>
+            <p class="text-white lead mb-4">
+              From raw stone extraction to architectural masterpieces.
+            </p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-white text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-primary"
+                  aria-current="page"
+                >
+                  Gallery
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="page-section bg-light" id="gallery">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-heading text-uppercase">The Granite Collection</h2>
+          <h3 class="section-subheading">
+            A glimpse into our quarry operations and finished projects.
+          </h3>
+
+          <!-- Category Filters -->
+          <div
+            class="d-flex flex-wrap justify-content-center gap-3 mt-4"
+            id="gallery-filters"
+          >
+            <button
+              class="btn btn-outline-dark rounded-0 px-4 active"
+              data-filter="all"
+            >
+              All Photos
+            </button>
+            <button
+              class="btn btn-outline-dark rounded-0 px-4"
+              data-filter="quarry"
+            >
+              Quarry Sites
+            </button>
+            <button
+              class="btn btn-outline-dark rounded-0 px-4"
+              data-filter="production"
+            >
+              Production
+            </button>
+            <button
+              class="btn btn-outline-dark rounded-0 px-4"
+              data-filter="machinery"
+            >
+              Machinery
+            </button>
+            <button
+              class="btn btn-outline-dark rounded-0 px-4"
+              data-filter="projects"
+            >
+              Projects
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="gallery-grid">
+          <!-- Quarry Photos -->
+          <div class="col-lg-4 col-md-6 gallery-item quarry">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200"
+              data-caption="Deep Excavation Site - High Grade Granite"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600"
+                class="img-fluid w-100"
+                alt="Quarry Site"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item quarry">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1741151749309-8bb17563c701?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              data-caption="Primary Block Extraction Zone"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1741151749309-8bb17563c701?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="img-fluid w-100"
+                alt="Block Extraction"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Production Photos -->
+          <div class="col-lg-4 col-md-6 gallery-item production">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1644409287870-0eb0d03e33fa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              data-caption="Precision Block Cutting Facility"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1644409287870-0eb0d03e33fa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="img-fluid w-100"
+                alt="Processing Plant"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item production">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1758609554191-2165affe25e2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              data-caption="Finished Polished Granite Slabs"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1758609554191-2165affe25e2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="img-fluid w-100"
+                alt="Slabs Yard"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machinery Photos -->
+          <div class="col-lg-4 col-md-6 gallery-item machinery">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200"
+              data-caption="Heavy Duty Block Handling Machinery"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=600"
+                class="img-fluid w-100"
+                alt="Heavy Machinery"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item machinery">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200"
+              data-caption="Industrial Excavation Equipment"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600"
+                class="img-fluid w-100"
+                alt="Excavator"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Photos -->
+          <div class="col-lg-4 col-md-6 gallery-item projects">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200"
+              data-caption="Modern Corporate Lobby - Granite Flooring"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600"
+                class="img-fluid w-100"
+                alt="Project 1"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item projects">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200"
+              data-caption="Luxury Kitchen - Granite Countertops"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600"
+                class="img-fluid w-100"
+                alt="Project 2"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item projects">
+            <div
+              class="gallery-card overflow-hidden position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              data-img="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=1200"
+              data-caption="Public Square - Granite Paving"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=600"
+                class="img-fluid w-100"
+                alt="Project 3"
+              />
+              <div
+                class="gallery-overlay d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-search-plus text-white fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 p-0 text-end">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0 text-center">
+            <img
+              id="lightboxImg"
+              src=""
+              class="img-fluid shadow-lg"
+              alt="Zoomed view"
+            />
+            <p id="lightboxCaption" class="text-white mt-3 lead fw-bold"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Operations Archive (Relocated from Home) -->
+    <section class="page-section bg-white" id="operations-archive">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-heading text-uppercase">Operations Archive</h2>
+          <h3 class="section-subheading">
+            Historical glimpses into our quarry and logistics.
+          </h3>
+        </div>
+        <div class="row g-2">
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bWFjaGluZXJ5LG1pbmluZ3x8fHx8fDE2ODQ0MTgzMDA&ixlib=rb-4.0.3&q=80&w=600"
+              class="img-fluid rounded shadow-sm"
+              alt="Machinery"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1669817060512-f488abffc80a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="img-fluid rounded shadow-sm"
+              alt="Granite Block"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cXVhcnJ5fHx8fHwxNjg0NDE4NDAw&ixlib=rb-4.0.3&q=80&w=600"
+              class="img-fluid rounded shadow-sm"
+              alt="Quarry View"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29uc3RydWN0aW9uLXNpdGV8fHx8fHwxNjg0NDE4NDUw&ixlib=rb-4.0.3&q=80&w=800"
+              class="img-fluid rounded shadow-sm"
+              alt="Loading"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8YnVpbGRpbmctbWF0ZXJpYWx8fHx8fHwxNjg0NDE4NTAw&ixlib=rb-4.0.3&q=80&w=800"
+              class="img-fluid rounded shadow-sm"
+              alt="Stockyard"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="page-section cta-section text-white text-center">
+      <div class="container">
+        <h2 class="display-5 fw-bold text-uppercase mb-4">
+          Inspired by Our Stone?
+        </h2>
+        <p class="lead mb-5">
+          Talk to our experts today for custom cutting and bulk deliveries.
+        </p>
+        <a
+          class="btn btn-primary btn-xl text-uppercase shadow-lg"
+          href="contact.html"
+          >Contact for Inquiry</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white border-top border-secondary">
+      <div class="container">
+        <div class="row g-4 text-center text-lg-start">
+          <div class="col-lg-4">
+            <h5 class="text-primary mb-4">GRANITE QUARRY</h5>
+            <p class="small mb-4">
+              Global leaders in premium granite extraction. Delivering nature's
+              finest to your doorstep.
+            </p>
+            <div
+              class="social-links d-flex justify-content-center justify-content-lg-start"
+            >
+              <a
+                class="btn btn-outline-light btn-social mx-1"
+                href="#!"
+                aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social mx-1"
+                href="#!"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social mx-1"
+                href="#!"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h5 class="text-primary mb-4">General Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="index.html"
+                  class="text-decoration-none small text-white-50"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="about.html"
+                  class="text-decoration-none small text-white-50"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="services.html"
+                  class="text-decoration-none small text-white-50"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="products.html"
+                  class="text-decoration-none small text-white-50"
+                  >Products</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="text-primary mb-4">Contact Details</h5>
+            <p class="small mb-2">
+              <i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Quarry
+              Road, Industrial Zone, Country
+            </p>
+            <p class="small mb-2">
+              <i class="fas fa-phone me-2 text-primary"></i> +1 (555) 123-4567
+            </p>
+            <p class="small mb-2">
+              <i class="fas fa-envelope me-2 text-primary"></i>
+              info@granitequarry.com
+            </p>
+          </div>
+        </div>
+        <hr class="my-5 border-secondary" />
+        <div class="text-center small text-white-50">
+          Copyrights Quarry | Built by Infotroz Solution Pvt. Ltd
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Filtering Logic
+        const filterButtons = document.querySelectorAll(
+          "#gallery-filters button",
+        );
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        filterButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Update active button
+            filterButtons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+
+            galleryItems.forEach((item) => {
+              if (filter === "all" || item.classList.contains(filter)) {
+                item.style.display = "block";
+                setTimeout(() => (item.style.opacity = "1"), 10);
+              } else {
+                item.style.opacity = "0";
+                setTimeout(() => (item.style.display = "none"), 300);
+              }
+            });
+          });
+        });
+
+        // Lightbox Modal Data Populate
+        const lightboxModal = document.getElementById("lightboxModal");
+        lightboxModal.addEventListener("show.bs.modal", function (event) {
+          const trigger = event.relatedTarget;
+          const imgSrc = trigger.getAttribute("data-img");
+          const caption = trigger.getAttribute("data-caption");
+
+          document.getElementById("lightboxImg").src = imgSrc;
+          document.getElementById("lightboxCaption").textContent = caption;
+        });
+      });
+    </script>
+  </body>
+</html>
