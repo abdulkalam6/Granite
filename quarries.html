@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Quarries & Infrastructure - Project Stone Industries</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html#page-top">
+          <img src="granite logo.jpeg" alt="Granite Quarry" height="70" class="me-3">
+          <span>GRANITE QUARRY</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="quarries.html">Quarries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Quarries Hero Section -->
+    <header class="about-hero">
+      <div class="container h-100">
+        <div
+          class="row h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-10">
+            <h1 class="text-white display-2 fw-bold mb-3">
+              Our Quarries & Infrastructure
+            </h1>
+            <p class="text-white lead mb-4">
+              State-of-the-art granite extraction facilities across multiple locations.
+            </p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-white text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-primary"
+                  aria-current="page"
+                >
+                  Quarries
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quarries Introduction -->
+    <section class="page-section bg-white">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="section-heading text-dark">
+              World-Class Quarry Operations
+            </h2>
+            <hr class="divider-gold mb-4" />
+            <p class="lead">
+              Project Stone Industries operates multiple high-yield granite quarries across India's richest granite deposits. 
+              Each quarry is equipped with state-of-the-art block cutting technology and processing facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quarries Tabs Section -->
+    <section class="page-section bg-light" id="quarries-tabs">
+      <div class="container">
+        <!-- Tabs Navigation -->
+        <ul
+          class="nav nav-pills mb-5 justify-content-center"
+          id="quarry-tabs"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="virgin-mines-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#virgin-mines"
+              type="button"
+              role="tab"
+              aria-controls="virgin-mines"
+              aria-selected="true"
+            >
+              <i class="fas fa-mountain me-2"></i>Virgin Mines
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="khammam-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#khammam"
+              type="button"
+              role="tab"
+              aria-controls="khammam"
+              aria-selected="false"
+            >
+              <i class="fas fa-hammer me-2"></i>Khammam Quarry
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="khammam-gangsaw-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#khammam-gangsaw"
+              type="button"
+              role="tab"
+              aria-controls="khammam-gangsaw"
+              aria-selected="false"
+            >
+              <i class="fas fa-cut me-2"></i>Khammam Gangsaw Quarry
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="warangal-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#warangal"
+              type="button"
+              role="tab"
+              aria-controls="warangal"
+              aria-selected="false"
+            >
+              <i class="fas fa-cubes me-2"></i>Warangal Quarry
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="quarry-tabContent">
+          <!-- Virgin Mines Tab -->
+          <div
+            class="tab-pane fade show active"
+            id="virgin-mines"
+            role="tabpanel"
+            aria-labelledby="virgin-mines-tab"
+          >
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img
+                  src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?q=80&w=1170&auto=format&fit=crop"
+                  class="img-fluid rounded shadow-lg"
+                  alt="Virgin Mines Quarry"
+                />
+              </div>
+              <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">Virgin Mines Quarry</h3>
+                <p class="mb-3">
+                  Our Virgin Mines quarry represents our newest and most advanced extraction facility. 
+                  This site features premium untapped granite deposits with exceptional color consistency and structural integrity.
+                </p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Location</h6>
+                      <p class="small mb-0">Virgin Mines Region</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-gem text-primary me-2"></i>Granite Type</h6>
+                      <p class="small mb-0">Premium grade raw blocks</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-cogs text-primary me-2"></i>Processing</h6>
+                      <p class="small mb-0">Block Cutting & Gangsaw</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Status</h6>
+                      <p class="small mb-0">Fully operational</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Khammam Quarry Tab -->
+          <div
+            class="tab-pane fade"
+            id="khammam"
+            role="tabpanel"
+            aria-labelledby="khammam-tab"
+          >
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img
+                  src="https://images.unsplash.com/photo-1709489662983-3674d790b224?q=80&w=1170&auto=format&fit=crop"
+                  class="img-fluid rounded shadow-lg"
+                  alt="Khammam Quarry"
+                />
+              </div>
+              <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">Khammam Quarry</h3>
+                <p class="mb-3">
+                  Located in Khammam, Telangana, this quarry serves as one of our primary extraction sites. 
+                  The facility is strategically positioned near major transportation routes, ensuring efficient logistics and distribution.
+                </p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Location</h6>
+                      <p class="small mb-0">Khammam, Telangana</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-gem text-primary me-2"></i>Granite Type</h6>
+                      <p class="small mb-0">Multi-color granite blocks</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-cogs text-primary me-2"></i>Processing</h6>
+                      <p class="small mb-0">Advanced Block Cutting</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-truck text-primary me-2"></i>Logistics</h6>
+                      <p class="small mb-0">Excellent transport connectivity</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Khammam Gangsaw Quarry Tab -->
+          <div
+            class="tab-pane fade"
+            id="khammam-gangsaw"
+            role="tabpanel"
+            aria-labelledby="khammam-gangsaw-tab"
+          >
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img
+                  src="https://images.unsplash.com/photo-1669817060512-f488abffc80a?q=80&w=1170&auto=format&fit=crop"
+                  class="img-fluid rounded shadow-lg"
+                  alt="Khammam Gangsaw Quarry"
+                />
+              </div>
+              <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">Khammam Gangsaw Quarry</h3>
+                <p class="mb-3">
+                  This specialized facility focuses on Gangsaw block production for export markets, particularly China. 
+                  Equipped with precision marking and grading systems, we process blocks to exact export specifications.
+                </p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Location</h6>
+                      <p class="small mb-0">Khammam, Telangana</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-gem text-primary me-2"></i>Specialization</h6>
+                      <p class="small mb-0">Gangsaw marked blocks</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-cogs text-primary me-2"></i>Processing</h6>
+                      <p class="small mb-0">Gangsaw Processing</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-globe text-primary me-2"></i>Export Focus</h6>
+                      <p class="small mb-0">China & international markets</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warangal Quarry Tab -->
+          <div
+            class="tab-pane fade"
+            id="warangal"
+            role="tabpanel"
+            aria-labelledby="warangal-tab"
+          >
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img
+                  src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=1171&auto=format&fit=crop"
+                  class="img-fluid rounded shadow-lg"
+                  alt="Warangal Quarry"
+                />
+              </div>
+              <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">Warangal Quarry</h3>
+                <p class="mb-3">
+                  The Warangal quarry is known for its consistent high-quality granite deposits. 
+                  This facility combines traditional quarrying expertise with modern extraction technology to maximize yield while maintaining quality standards.
+                </p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Location</h6>
+                      <p class="small mb-0">Warangal, Telangana</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-gem text-primary me-2"></i>Granite Type</h6>
+                      <p class="small mb-0">Premium granite variants</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-cogs text-primary me-2"></i>Processing</h6>
+                      <p class="small mb-0">Block Cutting & Processing</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="quarry-detail-box p-3 bg-white border-start border-primary border-4">
+                      <h6 class="fw-bold mb-2"><i class="fas fa-star text-primary me-2"></i>Quality</h6>
+                      <p class="small mb-0">High consistency & grade</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure Highlights -->
+    <section class="page-section bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="section-heading text-uppercase text-white mb-5">
+          Infrastructure & Capabilities
+        </h2>
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <div class="infra-stat">
+              <i class="fas fa-hard-hat fa-3x mb-3 text-primary"></i>
+              <h4 class="fw-bold mb-2">175 Workers</h4>
+              <p class="small">Total workforce across all sites</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="infra-stat">
+              <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+              <h4 class="fw-bold mb-2">Advanced Equipment</h4>
+              <p class="small">Latest quarrying technology</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="infra-stat">
+              <i class="fas fa-truck-loading fa-3x mb-3 text-primary"></i>
+              <h4 class="fw-bold mb-2">Multiple Transport</h4>
+              <p class="small">Well-connected logistics network</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="infra-stat">
+              <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+              <h4 class="fw-bold mb-2">Safety First</h4>
+              <p class="small">Comprehensive safety protocols</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="page-section cta-section text-white text-center">
+      <div class="container">
+        <h2 class="display-5 fw-bold text-uppercase mb-4">
+          Interested in Our Quarry Operations?
+        </h2>
+        <p class="lead mb-5">
+          Contact us to learn more about our granite extraction and processing capabilities.
+        </p>
+        <a
+          class="btn btn-primary btn-xl text-uppercase shadow-lg"
+          href="contact.html"
+          >Get in Touch</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white border-top border-secondary">
+      <div class="container">
+        <div class="row g-4 text-center text-lg-start">
+          <div class="col-lg-4">
+            <h5 class="text-primary mb-4">PROJECT STONE INDUSTRIES</h5>
+            <p class="small mb-4">
+              Premium granite mining, processing and export company with 23+ years of industry experience.
+            </p>
+            <div
+              class="social-links d-flex justify-content-center justify-content-lg-start"
+            >
+              <a
+                class="btn btn-outline-light btn-social mx-1"
+                href="#!"
+                aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social mx-1"
+                href="#!"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-social mx-1"
+                href="#!"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h5 class="text-primary mb-4">General Links</h5>
+            <ul class="list-unstyled">
+              <li class=
+
+"mb-2">
+                <a
+                  href="index.html"
+                  class="text-decoration-none small text-white-50"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="about.html"
+                  class="text-decoration-none small text-white-50"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="services.html"
+                  class="text-decoration-none small text-white-50"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="products.html"
+                  class="text-decoration-none small text-white-50"
+                  >Products</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="text-primary mb-4">Contact Our Head Office</h5>
+            <p class="small mb-2">
+              <i class="fas fa-map-marker-alt me-2 text-primary"></i>No: 31/46 A, 7th Lane, Sasthri Nagar, Adyar,<br />Chennai – 600020, Tamil Nadu, India
+            </p>
+            <p class="small mb-2">
+              <i class="fas fa-phone me-2 text-primary"></i> +91 (Contact Number)
+            </p>
+            <p class="small mb-2">
+              <i class="fas fa-envelope me-2 text-primary"></i>
+              projectstoneindustry@gmail.com
+            </p>
+          </div>
+        </div>
+        <hr class="my-5 border-secondary" />
+        <div class="text-center small text-white-50">
+          Copyrights Project Stone Industries | Built by Infotroz Solution Pvt. Ltd
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
